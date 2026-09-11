@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&display=swap');
+
+* {
+box-sizing: border-box;
+}
+
+body {
+margin: 0;
+min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+font-family: 'Baloo 2', sans-serif;
+background: linear-gradient(135deg, #46178f 0%, #7b2ff7 50%, #b026ff 100%);
+color: #fff;
+padding: 20px;
+}
+
+.shape-bg {
+position: fixed;
+opacity: 0.15;
+z-index: 0;
+}
+
+.container-kahoot {
+position: relative;
+z-index: 1;
+width: 100%;
+max-width: 700px;
+}
+
+.top-bar {
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-bottom: 18px;
+}
+
+.badge-pergunta {
+background: rgba(255,255,255,0.2);
+border: 2px solid #fff;
+color: #fff;
+font-weight: 700;
+padding: 8px 18px;
+border-radius: 30px;
+font-size: 0.95rem;
+}
+
+.progress-track {
+background: rgba(255,255,255,0.25);
+border-radius: 20px;
+height: 12px;
+width: 100%;
+overflow: hidden;
+margin-bottom: 25px;
+}
+
+.progress-fill {
+background: #ffd400;
+height: 100%;
+border-radius: 20px;
+transition: width 0.4s ease;
+}
+
+.card-kahoot {
+background: #fff;
+color: #262143;
+border-radius: 22px;
+padding: 40px 35px;
+box-shadow: 0 12px 0 rgba(0,0,0,0.25);
+text-align: center;
+}
+
+.pergunta-titulo {
+font-size: 1.6rem;
+font-weight: 800;
+margin-bottom: 30px;
+line-height: 1.3;
+}
+
+.answers-grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 16px;
+}
+
+.answer-btn {
+border: none;
+border-radius: 14px;
+padding: 22px 18px;
+font-family: 'Baloo 2', sans-serif;
+font-size: 1.05rem;
+font-weight: 700;
+color: #fff;
+cursor: pointer;
+display: flex;
+align-items: center;
+gap: 12px;
+text-align: left;
+box-shadow: 0 6px 0 rgba(0,0,0,0.25);
+transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.answer-btn:hover {
+transform: translateY(-4px);
+}
+
+.answer-btn:active {
+transform: translateY(3px);
+box-shadow: 0 2px 0 rgba(0,0,0,0.25);
+}
+
+.answer-shape {
+font-size: 1.4rem;
+line-height: 1;
+flex-shrink: 0;
+}
+
+.btn-vermelho { background: #e21b3c; }
+.btn-azul { background: #1368ce; }
+.btn-amarelo { background: #d89e00; }
+.btn-verde { background: #26890c; }
+
+.hero-title {
+font-size: 3rem;
+font-weight: 800;
+text-align: center;
+margin: 0 0 10px 0;
+text-shadow: 0 4px 0 rgba(0,0,0,0.2);
+}
+
+.hero-subtitle {
+text-align: center;
+font-size: 1.15rem;
+margin-bottom: 35px;
+opacity: 0.95;
+}
+
+.btn-kahoot-cta {
+display: block;
+width: 100%;
+text-align: center;
+background: #ffd400;
+color: #262143;
+font-family: 'Baloo 2', sans-serif;
+font-weight: 800;
+font-size: 1.3rem;
+padding: 18px;
+border-radius: 16px;
+text-decoration: none;
+border: none;
+cursor: pointer;
+box-shadow: 0 8px 0 rgba(0,0,0,0.25);
+transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.btn-kahoot-cta:hover {
+transform: translateY(-3px);
+color: #262143;
+}
+
+.btn-kahoot-cta:active {
+transform: translateY(3px);
+box-shadow: 0 3px 0 rgba(0,0,0,0.25);
+}
+
+.faixa-status {
+display: inline-block;
+padding: 10px 26px;
+border-radius: 30px;
+font-weight: 800;
+font-size: 1.3rem;
+margin-bottom: 22px;
+}
+
+.faixa-errada {
+background: #ffe1e6;
+color: #e21b3c;
+}
+
+.faixa-certa {
+background: #e2ffe6;
+color: #26890c;
+}
+
+.explicacao-texto {
+font-size: 1.1rem;
+line-height: 1.6;
+margin-bottom: 30px;
+}
+
+.emoji-grande {
+font-size: 4rem;
+margin-bottom: 10px;
+}
+
+.resultado-numero {
+font-size: 5rem;
+font-weight: 800;
+color: #e21b3c;
+margin: 10px 0 5px 0;
+}
+
+.resultado-legenda {
+font-size: 1.1rem;
+opacity: 0.85;
+margin-bottom: 30px;
+}

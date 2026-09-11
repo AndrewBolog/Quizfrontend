@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pergunta 5</title>
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="container-kahoot">
+<div class="top-bar">
+<span class="badge-pergunta">Pergunta 5 de 5</span>
+<span class="badge-pergunta">⏱️ Frontend</span>
+</div>
+<div class="progress-track">
+<div class="progress-fill" style="width:100%;"></div>
+</div>
+<div class="card-kahoot">
+<h2 class="pergunta-titulo">Para que serve o atributo "alt" em uma tag &lt;img&gt;?</h2>
+<div class="answers-grid">
+<button class="answer-btn btn-vermelho" onclick="responder('errada')"><span class="answer-shape">▲</span>Define a largura da imagem em pixels</button>
+<button class="answer-btn btn-azul" onclick="responder('certa')"><span class="answer-shape">◆</span>Fornece um texto alternativo para acessibilidade e para quando a imagem não carrega</button>
+<button class="answer-btn btn-amarelo" onclick="responder('errada')"><span class="answer-shape">●</span>Aplica um filtro visual à imagem</button>
+<button class="answer-btn btn-verde" onclick="responder('errada')"><span class="answer-shape">■</span>Define o link para onde a imagem deve redirecionar ao ser clicada</button>
+</div>
+</div>
+</div>
+<script>
+function responder(tipo){
+if(tipo === 'certa'){
+window.location.href = 'resultado.html';
+} else {
+var atual = parseInt(localStorage.getItem('erros') || '0');
+localStorage.setItem('erros', atual + 1);
+window.location.href = 'explicacao5.html';
+}
+}
+</script>
+</body>
+</html>

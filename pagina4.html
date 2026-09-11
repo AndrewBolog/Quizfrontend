@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pergunta 4</title>
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="container-kahoot">
+<div class="top-bar">
+<span class="badge-pergunta">Pergunta 4 de 5</span>
+<span class="badge-pergunta">⏱️ Frontend</span>
+</div>
+<div class="progress-track">
+<div class="progress-fill" style="width:80%;"></div>
+</div>
+<div class="card-kahoot">
+<h2 class="pergunta-titulo">O que é uma Promise em JavaScript?</h2>
+<div class="answers-grid">
+<button class="answer-btn btn-vermelho" onclick="responder('errada')"><span class="answer-shape">▲</span>Uma função que executa apenas uma vez durante todo o ciclo de vida da aplicação</button>
+<button class="answer-btn btn-azul" onclick="responder('errada')"><span class="answer-shape">◆</span>Uma tag HTML usada para carregamento assíncrono de imagens</button>
+<button class="answer-btn btn-amarelo" onclick="responder('errada')"><span class="answer-shape">●</span>Um seletor CSS para elementos que ainda não foram carregados</button>
+<button class="answer-btn btn-verde" onclick="responder('certa')"><span class="answer-shape">■</span>Um objeto que representa a conclusão ou falha futura de uma operação assíncrona</button>
+</div>
+</div>
+</div>
+<script>
+function responder(tipo){
+if(tipo === 'certa'){
+window.location.href = 'pagina5.html';
+} else {
+var atual = parseInt(localStorage.getItem('erros') || '0');
+localStorage.setItem('erros', atual + 1);
+window.location.href = 'explicacao4.html';
+}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resultado</title>
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="container-kahoot">
+<div class="card-kahoot">
+<div class="emoji-grande">🏆</div>
+<h1 class="hero-title" style="color:#262143;text-shadow:none;font-size:2.2rem;">Quiz Finalizado!</h1>
+<p class="resultado-legenda">Total de respostas erradas</p>
+<div id="qtd-erros" class="resultado-numero">0</div>
+<a href="index.html" class="btn-kahoot-cta">Jogar Novamente</a>
+</div>
+</div>
+<script>
+document.getElementById('qtd-erros').innerText = localStorage.getItem('erros') || '0';
+</script>
+</body>
+</html>
